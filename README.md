@@ -3,11 +3,6 @@
 [Code](https://github.com/HarshilBhatia/QRNG) | 
 [Project Page](https://4dqv.mpi-inf.mpg.de/QRNG/)
 
-This is the code for the experiments in the IEEE Access publication 'Generation of Truly Random Numbers o# Generation of Truly Random Numbers on a Quantum Annealer
-[Paper]() | 
-[Code](https://github.com/HarshilBhatia/QRNG) | 
-[Project Page](https://4dqv.mpi-inf.mpg.de/QRNG/)
-
 This is the code for the experiments in the IEEE Access publication 'Generation of Truly Random Numbers on a Quantum Annealer'.
 
 ## Running the Code
