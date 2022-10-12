@@ -35,6 +35,12 @@ To generate 990,000 raw bits from the Advantage Architecture run the following c
 ```
 python unbiased_qrng.py --qpu --N 4950 --samples 200 --arch ADV
 ```
+### Biased Random Number Generation
+To generate 400,000 raw biased bits from the 2000Q Architecture run the following code:
+```
+python unbiased_qrng.py --qpu --N 2000 --samples 200 --arch 2000Q --bias 0.1
+```
+
 
 ## Random Numbers 
 We provide large sets of generated unbiased and biased random numbers [here](https://4dqv.mpi-inf.mpg.de/QRNG/) 
