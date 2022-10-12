@@ -7,7 +7,7 @@
 This is the code for the experiments in the IEEE Access publication 'Generation of Truly Random Numbers on a Quantum Annealer'.
 
 ## Running the Code
-The code can be executed directly on D-Wave's Leap IDE: https://www.dwavesys.com/take-leap or locally by installing D-Wave Ocean: https://docs.ocean.dwavesys.com/en/stable/.
+The code can be executed directly on [D-Wave's Leap IDE](https://www.dwavesys.com/take-leap) or locally by installing [D-Wave Ocean SDK]( https://docs.ocean.dwavesys.com/en/stable/)
 
 ### Installation
 If running the code locally, we recommend the user to create a virtual environment (optionally using conda)
