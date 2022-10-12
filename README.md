@@ -1,7 +1,20 @@
-# QRNG
-Quantum Random Number Generation using the D-Wave Quantum Annealer 
+# Generation of Truly Random Numbers on a Quantum Annealer
 
 
+## Citation 
+
+If you find our work useful in your research, please consider citing:
+
+```
+@inproceedings{bhatia2022qrng,
+ title = {Generation of Truly Random Numbers on a Quantum Annealer},
+ author = {H. Bhatia and E. Lähner and C. Theobalt and V. Golyanik},
+ journal = {IEEE Access},
+ year = {2022},
+ volume = {},
+ pages= {},
+}
+```
 ## License
 Permission is hereby granted, free of charge, to any person or company obtaining a copy of this software and associated documentation files (the "Software") from the copyright holders to use the Software for any non-commercial purpose. Publication, redistribution and (re)selling of the software, of modifications, extensions, and derivates of it, and of other software containing portions of the licensed Software, are not permitted. The Copyright holder is permitted to publically disclose and advertise the use of the software by any licensee.
 
