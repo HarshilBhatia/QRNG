@@ -19,6 +19,7 @@ def parseArguments():
     parser.add_argument("--N",type = int,default = 4950, help = 'number of bits')
     parser.add_argument("--arch",default = 'ADV',choices= ['ADV','2000Q'])
     parser.add_argument("--samples",type = int,default = 200,help = 'number of samples')
+    parser.add_argument("--bias",type = float,default = 0,help = 'input bias')
 
     args = parser.parse_args()
     args_config = vars(args)
@@ -35,6 +36,8 @@ def main(args_config):
     isQPU = args_config['qpu'] # 
     Advantage = (args_config['arch'] == 'ADV')
     samples = args_config['samples']
+    bias = args_config['bias']
+
 
     if isQPU:
         if Advantage:
@@ -48,23 +51,22 @@ def main(args_config):
     l = {}
 
     x = Array.create("vector", N, "BINARY")
-    for bias in [0.1,0.15,0.2]:        
-        H = x[0] - x[0]
-        for i in range(N):
-            H += bias*(x[i])
+    H = x[0] - x[0]
+    for i in range(N):
+        H += bias*(x[i])
 
-        model = H.compile()
-        qubo,offset = model.to_qubo()
-        
-        for itr in range(samples):
-            response = sampler.sample_qubo(qubo, num_reads = 1,annealing_time = 1,auto_scale = False) 
-            l = np.append(l,(np.array(response.to_pandas_dataframe().drop(columns = ['energy','num_occurrences']))).flatten())
+    model = H.compile()
+    qubo,offset = model.to_qubo()
+    
+    for itr in range(samples):
+        response = sampler.sample_qubo(qubo, num_reads = 1,annealing_time = 1,auto_scale = False) 
+        l = np.append(l,(np.array(response.to_pandas_dataframe().drop(columns = ['energy','num_occurrences']))).flatten())
 
-        if Advantage == 1:
-            pd.DataFrame(l).to_csv("pegasus_qubits={}_bias={}.csv".format(N,bias))
+    if Advantage == 1:
+        pd.DataFrame(l).to_csv("pegasus_qubits={}_bias={}.csv".format(N,bias))
 
-        else:
-            pd.DataFrame(l).to_csv("chimera_qubits={}_bias={}.csv".format(N,bias))
+    else:
+        pd.DataFrame(l).to_csv("chimera_qubits={}_bias={}.csv".format(N,bias))
 
             
 if __name__ == '__main__':
