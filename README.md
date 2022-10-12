@@ -1,5 +1,5 @@
 # Generation of Truly Random Numbers on a Quantum Annealer
-This is the code for the experiments in the ICCV publication 'Generation of Truly Random Numbers on a Quantum Annealer' in https://4dqv.mpi-inf.mpg.de/QRNG/. 
+This is the code for the experiments in the IEEE Access publication 'Generation of Truly Random Numbers on a Quantum Annealer' in https://4dqv.mpi-inf.mpg.de/QRNG/. 
 
 ## Running the Code
 The code can be executed directly on D-Wave's Leap IDE: https://www.dwavesys.com/take-leap or locally by installing D-Wave Ocean: https://docs.ocean.dwavesys.com/en/stable/.
