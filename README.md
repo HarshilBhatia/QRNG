@@ -18,7 +18,12 @@ pip install dwave-ocean-sdk
 pip install pyqubo
 ```
 
-The next step is to configure access to the Leap's Solvers. To achieve this, the user needs to create an account for access to the solvers and retrieve their respective API tokens. For more information refer to this [configuration guide](https://docs.ocean.dwavesys.com/en/stable/overview/sapi.html#sapi-access)
+The next step is to configure access to the Leap's Solvers. To achieve this, the user needs to create an account to gain access (a free account provides upto 1 minute of QPU time) to the solvers and retrieve their respective API tokens. 
+
+Now run, 
+``` dwave setup```
+
+For more information related to the configuration please refer to this [guide](https://docs.ocean.dwavesys.com/en/stable/overview/sapi.html#sapi-access)
 
 
 ### Unbiased Random Number Generation
