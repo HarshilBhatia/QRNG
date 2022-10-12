@@ -15,7 +15,11 @@ If running the code locally, we recommend the user to create a virtual environme
 ```
 conda env create -n ocean
 pip install dwave-ocean-sdk
+pip install pyqubo
 ```
+
+The next step is to configure access to the Leap's Solvers. To achieve this, the user needs to create an account for access to the solvers and retrieve their respective API tokens. For more information refer to this [configuration guide](https://docs.ocean.dwavesys.com/en/stable/overview/sapi.html#sapi-access)
+
 
 ### Unbiased Random Number Generation
 To generate 990,000 raw bits from the Advantage Architecture run the following code:
