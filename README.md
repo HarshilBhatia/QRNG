@@ -1,12 +1,20 @@
 # Generation of Truly Random Numbers on a Quantum Annealer
+This is the code for the experiments in the ICCV publication 'Generation of Truly Random Numbers on a Quantum Annealer' in https://4dqv.mpi-inf.mpg.de/QRNG/. 
 
+## Running the Code
+The code can be executed directly on D-Wave's Leap IDE: https://www.dwavesys.com/take-leap or locally by installing D-Wave Ocean: https://docs.ocean.dwavesys.com/en/stable/.
+
+## How to run?
+Execute the corresponding unbiased_qrng.py file.
+
+##Random Numbers 
+We provide large sets of generated unbiased and biased random numbers [here](https://4dqv.mpi-inf.mpg.de/QRNG/) 
 
 ## Citation 
-
 If you find our work useful in your research, please consider citing:
 
 ```
-@inproceedings{bhatia2022qrng,
+@article{bhatia2022qrng,
  title = {Generation of Truly Random Numbers on a Quantum Annealer},
  author = {H. Bhatia and E. Lähner and C. Theobalt and V. Golyanik},
  journal = {IEEE Access},
