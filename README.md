@@ -10,7 +10,6 @@ This is the code for the experiments in the IEEE Access publication 'Generation 
 <sup>1</sup> Indian Institute of Technology, Jodhpur , <sup>2</sup>Max Planck Institute for Informatics 
 
 <img src="teaser.png" alt="teaser image" />
-(D) The Niobium Loop has been adopted from [D-Wave's Leap IDE](https://github.com/MSeelbach/Q-Match).
 
 ## Running the Code
 The code can be executed directly on [D-Wave's Leap IDE](https://www.dwavesys.com/take-leap) or locally by installing [D-Wave Ocean SDK]( https://docs.ocean.dwavesys.com/en/stable/)
