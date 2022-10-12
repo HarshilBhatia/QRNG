@@ -16,7 +16,7 @@ If you find our work useful in your research, please consider citing:
 ```
 @article{bhatia2022qrng,
  title = {Generation of Truly Random Numbers on a Quantum Annealer},
- author = {H. Bhatia and E. Lähner and C. Theobalt and V. Golyanik},
+ author = {H. Bhatia and E. Tretschk and C. Theobalt and V. Golyanik},
  journal = {IEEE Access},
  year = {2022},
  volume = {},
