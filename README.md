@@ -1,5 +1,5 @@
 # Generation of Truly Random Numbers on a Quantum Annealer
-[Paper]() | 
+[Paper](https://ieeexplore.ieee.org/abstract/document/9923932/) | 
 [Code](https://github.com/HarshilBhatia/QRNG) | 
 [Project Page](https://4dqv.mpi-inf.mpg.de/QRNG/)
 
